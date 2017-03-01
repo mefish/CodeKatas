@@ -15,7 +15,7 @@ public class DataMungingApplicationTests {
 	@Test
 	public void contextLoads() {
 		DataMungingApplication munge = new DataMungingApplication();
-		assertNotNull(munge);
+		assertTrue(munge.getConfigLoaded());
 	}
 	
 	@Test(expected = IOException.class)
@@ -23,5 +23,4 @@ public class DataMungingApplicationTests {
 		DataMungingApplication munge = new DataMungingApplication();
 		int day = munge.GetMinimumTempSpread();
 	}
-
 }
