@@ -16,6 +16,14 @@ public class DataMungingApplication {
 		SpringApplication.run(DataMungingApplication.class, args);
 	}
 	
+	public boolean getIsFileOpen() {
+		return true;
+	}
+	
+	public void OpenFile() {
+		
+	}
+	
 	public boolean getConfigLoaded() {
 		return mungeConfig != null;
 	}

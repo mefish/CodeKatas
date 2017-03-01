@@ -23,4 +23,11 @@ public class DataMungingApplicationTests {
 		DataMungingApplication munge = new DataMungingApplication();
 		int day = munge.GetMinimumTempSpread();
 	}
+	
+	@Test
+	public void CanLoadFileInteractor() {
+		DataMungingApplication munge = new DataMungingApplication();
+		munge.OpenFile();
+		assertTrue(munge.getIsFileOpen());
+	}
 }
